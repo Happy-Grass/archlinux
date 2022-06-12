@@ -1,14 +1,11 @@
 local opts = {
-
     settings = {
-        python = {
-          analysis = {
-            autoSearchPaths = true,
-            diagnosticMode = "workspace",
-            useLibraryCodeForTypes = true
-          }
-      }
+        
+           },
+    filetypes ={
+      "c","cpp","objc","objcpp","cuda"
     },
+    
     flags = {
         debounce_text_changes = 150,
     },

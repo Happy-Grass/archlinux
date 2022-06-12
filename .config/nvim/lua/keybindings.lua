@@ -116,6 +116,9 @@ map("t", "<leader>l", [[ <C-\><C-N><C-w>l ]], opt)
 --------------------------------------------------------------------
 -- 插件快捷键
 local pluginKeys = {}
+-- floate terminal悬浮终端
+vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
 -- treesitter 折叠
 map("n", "zz", ":foldclose<CR>", opt)

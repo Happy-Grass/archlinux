@@ -14,24 +14,30 @@ null_ls.setup({
     formatting.shfmt,
     -- StyLua
     formatting.stylua,
+    --Bibtex
+    formatting.bibclean,
+    --Clang
+    formatting.clang_format,
+    --python
+    formatting.black,
     -- frontend
-    formatting.prettier.with({ -- 只比默认配置少了 markdown
-      filetypes = {
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "vue",
-        "css",
-        "scss",
-        "less",
-        "html",
-        "json",
-        "yaml",
-        "graphql",
-      },
-      prefer_local = "node_modules/.bin",
-    }),
+    -- formatting.prettier.with({ -- 只比默认配置少了 markdown
+    --   filetypes = {
+    --     "javascript",
+    --     "javascriptreact",
+    --     "typescript",
+    --     "typescriptreact",
+    --     "vue",
+    --     "css",
+    --     "scss",
+    --     "less",
+    --     "html",
+    --     "json",
+    --     "yaml",
+    --     "graphql",
+    --   },
+    --   prefer_local = "node_modules/.bin",
+    -- }),
     -- formatting.fixjson,
     -- formatting.black.with({ extra_args = { "--fast" } }),
   },

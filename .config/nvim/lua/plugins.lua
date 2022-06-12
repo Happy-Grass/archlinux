@@ -85,6 +85,7 @@ packer.startup({
     use("ahmedkhalf/project.nvim")
     -- treesitter
     use({"nvim-treesitter/nvim-treesitter",run = ":TSUpdate"})
+    use("p00f/nvim-ts-rainbow")
     -- indent-blankline
     use("lukas-reineke/indent-blankline.nvim")
      -- surround
@@ -95,7 +96,8 @@ packer.startup({
     use("windwp/nvim-autopairs")
     -- git
     use({"lewis6991/gitsigns.nvim" })
-
+    -- floate terminal
+    use "numToStr/FTerm.nvim"
     ---------------------------------------------------------------------------
     ---------------------------LSP---------------------------------------------
     use({ "williamboman/nvim-lsp-installer" })
