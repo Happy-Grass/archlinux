@@ -9,6 +9,7 @@ local servers = {
   pyright = require("lsp.config.python"),
   clangd = require("lsp.config.c"),
   texlab = require("lsp.config.tex"),
+  bashls = require("lsp.config.bash"),
 }
 -- 自动安装 Language Servers
 for name, _ in pairs(servers) do
